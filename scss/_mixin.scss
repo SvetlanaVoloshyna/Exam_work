@@ -1,0 +1,47 @@
+
+@mixin header-bg-img ($url,$w,$h) {
+    background-image: url($url);
+    width: $w;
+    height: $h;
+    background-position: right center; 
+    background-size: cover;
+}
+@mixin bg-img($u,$w,$h) {
+    background-image: url($u);
+    width: $w;
+    height: $h;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+@mixin bg-img-cover($u,$w,$h) {
+    background-image: url($u);
+    width: $w;
+    height: $h;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+@mixin button($bg-col){
+    background-color: $bg-col;
+    border: none;
+    width: 200px;
+    height: 55px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+@mixin title-text($color,$fs,$fw){
+    color: $color;
+    font-family: "Raleway-Bold";
+    font-size: $fs;
+    font-weight: $fw;
+    letter-spacing: normal;
+}
+@mixin text($color) {
+    color: $color;
+    font-family: "Raleway-Regular";
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: normal;
+}
+
+
